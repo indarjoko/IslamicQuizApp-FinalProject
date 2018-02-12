@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/mosque"
+    android:orientation="vertical"
+    tools:context="io.github.indarjoko.simplequizapp.MainActivity">
+
+
+    <TextView
+        android:id="@+id/pertanyaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pertanyaan?"
+        android:textSize="20sp"
+        android:textColor="#E3F2FD"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"/>
+
+   <RadioGroup
+       android:layout_below="@id/pertanyaan"
+       android:id="@+id/radio"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:layout_margin="40dp"
+       android:textColor="#E3F2FD" >
+
+        <RadioButton
+        android:id="@+id/pilih1"
+        android:layout_below="@id/pertanyaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilihan 1"
+        android:textSize="20sp"
+            android:textColor="#E3F2FD"
+            android:buttonTint="@color/aqua"
+        />
+
+        <RadioButton
+        android:id="@+id/pilih2"
+        android:layout_below="@id/pertanyaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilihan 2"
+        android:textSize="20sp"
+            android:textColor="#E3F2FD"
+            android:buttonTint="@color/aqua"
+        />
+
+        <RadioButton
+        android:id="@+id/pilih3"
+        android:layout_below="@id/pertanyaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilihan 3"
+        android:textSize="20sp"
+            android:textColor="#E3F2FD"
+            android:buttonTint="@color/aqua"
+        />
+
+       <RadioButton
+           android:id="@+id/pilih4"
+           android:layout_below="@id/pertanyaan"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Pilihan 4"
+           android:textSize="20sp"
+           android:textColor="#E3F2FD"
+           android:buttonTint="@color/aqua"
+           />
+
+   </RadioGroup>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <Button
+           android:id="@+id/sub1"
+           android:layout_marginTop="25dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:onClick="submit"
+           android:text="SUBMIT"
+           android:padding="25dip"
+           android:backgroundTint="@color/gold"/>
+
+
+   </RelativeLayout>
+
+</LinearLayout>

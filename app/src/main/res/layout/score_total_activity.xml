@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/mosque2"
+    tools:context="io.github.indarjoko.simplequizapp.TotalScore">
+
+    <TextView
+        android:id="@+id/hasil"
+        android:text="Selamat! Anda Mendapat Nilai"
+        android:textColor="@color/lightgreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/total"
+        android:text="100"
+        android:textColor="@color/lightgreen"
+        android:textSize="50sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="coba"
+        android:text="Coba Lagi"
+        android:textColor="@color/lightgreen"
+        android:background="@color/grey"
+        />
+
+</LinearLayout>
